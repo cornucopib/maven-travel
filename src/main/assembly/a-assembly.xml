@@ -1,0 +1,18 @@
+<assembly xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/3.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/3.0.0 http://maven.apache.org/xsd/assembly-3.0.0.xsd">
+    <id>a-jar</id>
+    <formats>
+        <format>jar</format>
+    </formats>
+    <files>
+        <file>
+            <source>src/main/java/com/cornucopib/specificfiles/dir1/A.java</source>
+            <outputDirectory>/cornucopib/specificfiles/dir1</outputDirectory>
+        </file>
+        <file>
+            <source>src/main/resources/dir1/a.json</source>
+            <outputDirectory>/dir1</outputDirectory>
+        </file>
+    </files>
+</assembly>
